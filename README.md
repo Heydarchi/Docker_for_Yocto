@@ -33,13 +33,12 @@ This version creates a `yocto` user and remaps its UID and GID to match the host
 
 ## Differences Between the Two Dockerfiles
 
-| Feature                      | root Version         | UID/GID Remapped Version   |
-|--||--|
-| Runs as root                | Yes                | No (non-root user)       |
-| Bitbake compatible          | No                 | Yes                      |
-| Works with mounted volumes  | Permission issues  | Matches host UID/GID     |
-| Suitable for development    | Limited/testing   | Recommended setup         |
-
+| Feature                      | Root Version           | UID/GID Remapped Version   |
+|-----------------------------|------------------------|-----------------------------|
+| Runs as root                | Yes                    | No (runs as non-root user)  |
+| Bitbake compatible          | No                     | Yes                         |
+| Works with mounted volumes  | Permission issues       | Matches host UID/GID        |
+| Suitable for development    | Limited / Testing Only | Recommended setup           |
 
 
 ## Build the Docker Image
