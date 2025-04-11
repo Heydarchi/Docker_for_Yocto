@@ -1,4 +1,4 @@
-# Dockerfile as root(Basic)
+# Dockerfile as root
 
 # Use Ubuntu as the base image
 FROM ubuntu:22.04
